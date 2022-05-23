@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div class="menu_login">
+        <div class="esq_login">
+            <h1>GRUPO BMS</h1>
+            <img src="assets/astronaut.svg" class="imagem" alt="astronauta">
+        </div>
+        <div class="dir_login">
+            <div class="card_login">
+                <img src="assets/logo sem fundo total.png" class="logo">
+                <div class="textField">
+                    <label for="usuario"></label>
+                    <input type="text" id="usuario" name="Usuario" placeholder="Usuário">
+                </div>
+                <div class="textField">
+                    <label for="senha"></label>
+                    <input type="password" id="senha" name="Senha" placeholder="Senha">
+                </div>
+                <button class="butaoLogin" onclick="salvarUsuario()" text="LOGIN">LOGIN</button>
+                <a href="#"> Esqueceu sua senha? </a>
+                <br>
+                <a href="#"> Junte-se a nós </a>
+            </div>
+        </div>
+    </div>
+    <script src="/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
