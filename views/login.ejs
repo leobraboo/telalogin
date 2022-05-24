@@ -28,8 +28,26 @@
                 </div>
                 <button class="butaoLogin" onclick="salvarUsuario()" text="LOGIN">LOGIN</button>
                 <button class="butaosenha" onclick="salvarUsuario()" text="esquece">Esqueceu sua senha?</button>
-                <button class="butaocad" onclick="salvarUsuario()" text="cadastro">Junte-se a nós</button>
+                <button class="butaocad" id="cadastro" onclick="salvarUsuario()" text="cadastro">Junte-se a nós</button>
                 <!-- teste -->
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2> Junte-se a Nós !!! </h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form" id="form">
+                    <input type="text" data-index='new' class="modal-field" id="usuario" placeholder="USUARIO" required>
+                    <input type="text"  class="modal-field" id="cnpjCpf" placeholder="CNPJ/CPF" required>
+                    <input type="password"  class="modal-field" id="senha" placeholder="SENHA" required>
+                    <input type="text"  class="modal-field" id="celular" placeholder="CELULAR" required>
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green" id="salvar" >Salvar</button>
+                    <button class="button red" id="cancelar">Cancelar</button>
+                </footer>
             </div>
         </div>
     </div>

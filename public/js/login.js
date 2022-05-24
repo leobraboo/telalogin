@@ -18,5 +18,20 @@ async function salvarUsuario() {
 
 }
 
+const openModal = () => document.getElementById('modal')
+    .classList.add('active')
+
+const closeModal = () =>{
+     clearFields()
+     document.getElementById('modal').classList.remove('active')
+     
+}
+
+document.getElementById('cadastro')
+    .addEventListener('click', openModal)
+
+document.getElementById('modalClose')
+    .addEventListener('click', closeModal)
+
 
 
