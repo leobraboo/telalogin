@@ -18,6 +18,10 @@ async function salvarUsuario() {
 
 }
 
+document.getElementById('Login').addEventListener('click', function () {
+    window.location.href = ('/home');
+});
+
 const clearFields = () => {
     const fields = document.querySelectorAll ('.modal-field')
     fields.forEach(field => fields.Value = " ")
