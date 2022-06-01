@@ -131,10 +131,10 @@ a {
     margin: 25px;
     border: none;
     background-color: rgb(81, 9, 250);
-    border-radius: 100px;
+    border-radius: 10px;
     outline: none;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 400;
     letter-spacing: 3px;
     color: white;
     cursor: pointer;
@@ -153,7 +153,7 @@ a {
     transition: 1s ease;
 }
 
-.butaosenha{
+.butaosenha {
     width: 60%;
     height: 30px;
     padding: 9px 0px;
@@ -165,7 +165,7 @@ a {
     border-radius: 8px;
 }
 
-.butaocad{
+.butaocad {
     width: 60%;
     height: 30px;
     padding: 9px 0px;
@@ -174,7 +174,7 @@ a {
     color: aqua;
     margin-bottom: 10px;
     border: none;
-    border-radius: 8px;
+    border-radius: 3px;
 
 }
 
@@ -191,7 +191,7 @@ a {
 }
 
 /* modal */
-.modal{
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -202,16 +202,16 @@ a {
     z-index: -1;
 }
 
-.modal.active{
+.modal.active {
     opacity: 1;
     z-index: 1;
 }
 
-.modal-content{
+.modal-content {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    gap:20px;
+    gap: 20px;
     width: 60vw;
     height: 40vh;
     margin: 15vh auto;
@@ -220,7 +220,7 @@ a {
     box-shadow: 1px 1px 10px black;
 }
 
-.modal-header{
+.modal-header {
     display: flex;
     position: relative;
     align-items: center;
@@ -232,7 +232,7 @@ a {
     font-size: 1rem;
 }
 
-.modal-close{
+.modal-close {
     position: absolute;
     right: 0;
     display: block;
@@ -243,57 +243,60 @@ a {
     cursor: pointer;
 }
 
-.modal-close:hover{
+.modal-close:hover {
     background-color: #FF4949;
     color: white;
 }
 
-.modal-form{
+.modal-form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    padding:0 20px;
+    padding: 0 20px;
 }
 
-.modal-field{
+.modal-field {
     width: calc(50% - 10px);
     height: 40px;
     outline-style: none;
     border-style: none;
     box-shadow: 0 0 2px black;
     padding: 0 10px;
-    font-size:1rem;
+    font-size: 1rem;
 }
 
-.modal-field:focus{
+.modal-field:focus {
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 3px var(--primary-color);
 }
 
 
-.modal-footer{
+.modal-footer {
     background-color: inherit;
     text-align: right;
     padding: 0 20px;
     position: relative;
 }
 
-@media (max-width:550px){
-    .modal{
-        top:100%;
+@media (max-width:550px) {
+    .modal {
+        top: 100%;
         transition: all 1s ease;
     }
-    .modal.active{
-        top:0;
+
+    .modal.active {
+        top: 0;
     }
-    .modal-content{
-        margin:0;
-        width:100%;
-        position:fixed;
+
+    .modal-content {
+        margin: 0;
+        width: 100%;
+        position: fixed;
     }
-    .modal-field{
-        width:100%;
+
+    .modal-field {
+        width: 100%;
     }
 }
 
@@ -310,62 +313,91 @@ a {
 
 @media only screen and (max-width:860px) {
     .card_login {
-        width: 55%;
-        height: 40%;
+        width: 50%;
+        height: 50vh;
     }
 
-    .textField{
+    .textField {
         font-size: 5pt;
         height: auto;
         padding: 0;
         margin: 0;
-        
+
     }
 
+    .textField>input {
+        width: 100%;
+        margin: 0px;
+        border: none;
+        border-radius: 10px;
+        padding: 3px;
+        font-size: 10pt;
+    }
+
+
+    .butaoLogin {
+        width: 50%;
+        height: 50px;
+        padding: 3px 0px;
+        margin: 15px;
+
+    }
+
+    .butaosenha{
+        font-size: 7pt;
+    }
+
+    .butaocad{
+        font-size: 7pt;
+    }
+
+    .login {
+        font-size: 8pt;
+    }
 }
 
 
-    @media only screen and (max-width:800px) {
-        .card_login {
-            width: 55%;
-            height: 40%;
-        }
-
-        .esq_login>h1 {
-            font-size: 4vh;
-        }
-
-
-
+@media only screen and (max-width:800px) {
+    .card_login {
+        width: 55%;
+        height: 40%;
     }
 
-    @media only screen and (max-width:600px) {
-        .menu_login {
-            flex-direction: column;
-            /* background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%); */
-        }
-
-        .esq_login {
-            width: 50%;
-            height: auto;
-        }
-
-        .dir_login {
-            width: 50%;
-            height: auto;
-        }
-
-        .imagem {
-            width: 50vw;
-        }
-
-        .card_login {
-            width: 80%;
-            height: auto;
-        }
-
-        .esq_login>h1 {
-            display: none;
-        }
-
+    .esq_login>h1 {
+        font-size: 4vh;
     }
+
+
+
+}
+
+@media only screen and (max-width:600px) {
+    .menu_login {
+        flex-direction: column;
+        /* background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%); */
+    }
+
+    .esq_login {
+        width: 50%;
+        height: auto;
+    }
+
+    .dir_login {
+        width: 50%;
+        height: auto;
+    }
+
+    .imagem {
+        width: 50vw;
+    }
+
+    .card_login {
+        width: 80%;
+        height: auto;
+    }
+
+    .esq_login>h1 {
+        display: none;
+    }
+
+}
