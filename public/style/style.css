@@ -191,6 +191,11 @@ a {
 }
 
 /* modal */
+
+.modal-form>input{
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -216,7 +221,7 @@ a {
     height: 40vh;
     margin: 15vh auto;
     padding-bottom: 20px;
-    background-color: rgb(183, 161, 194);
+    background-color: rgba(246, 237, 250, 0.753);
     box-shadow: 1px 1px 10px black;
 }
 
@@ -225,9 +230,9 @@ a {
     position: relative;
     align-items: center;
     justify-content: center;
-    background: #4c02f7;
+    background: #43055ce1;
     height: 40px;
-    color: aqua;
+    color: rgb(138, 207, 247);
     line-height: 40px;
     font-size: 1rem;
 }
@@ -244,8 +249,8 @@ a {
 }
 
 .modal-close:hover {
-    background-color: #FF4949;
-    color: white;
+    background-color: #f80404;
+    color: rgb(51, 2, 39);
 }
 
 .modal-form {
@@ -253,7 +258,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0 20px;
+    padding: 0 18px;
 }
 
 .modal-field {

@@ -18,6 +18,26 @@ async function salvarUsuario() {
 
 }
 
+async function salvar() {
+    try {
+        const cadastro = {
+            usuariocad: document.getElementById("usuariocad").value,
+            cnpjCpf: document.getElementById("cnpjcpf").value,
+            senhacad: document.getElementById("senhacad").value,
+            celular: document.getElementById("celular").value,
+        }
+
+        const { data } = await axios.post(`http://localhost:3001`, cadastro)
+        console.log(data)
+
+    } catch (error) {
+        console.log(error)
+
+    }
+
+
+}
+
 document.getElementById('Login').addEventListener('click', function () {
     window.location.href = ('/home');
 });
