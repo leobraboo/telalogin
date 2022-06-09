@@ -13,7 +13,7 @@ body {
 }
 
 
-.principal {
+/* .principal {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -21,8 +21,7 @@ body {
     margin: 10vw;
     height: auto;
     width: auto;
-    /* max-width: 800px; */
-}
+} */
 
 
 a {
@@ -54,14 +53,47 @@ nav {
 
 }
 
+.principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    border: solid 3px rgb(234, 0, 255);
+    align-items: center ;
+    flex-direction: column;
+}
+
+.exibirProd{
+    width: 50vw;
+    height: 50vh;
+    padding: 10px;
+    justify-content: center;
+    border: solid 3px yellow;
+    font-size: 1.5rem;
+    display: flex;
+    /* visibility: hidden; */
+    background-color: rgba(167, 164, 164, 0.514);
+}
+
+.exibirCli{
+    width: 50vw;
+    height: 50vh;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    border: solid 3px rgb(0, 255, 136);
+    background-color: rgba(167, 164, 164, 0.514);
+    color: #fff;
+}
+
 /* cards */
 
 
-.flip-container {
+/* .flip-container {
     position: relative;
     padding: 0 0% 0% 50px;
     margin-top: 20px;
-    /* mexi no padding  */
+    
 }
 
 .flipper {
@@ -86,7 +118,7 @@ nav {
 
 .back {
     transform: rotateY(180deg);
-}
+} */
 
 /* card */
 
