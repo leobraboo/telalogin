@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NavBar</title>
-    <link rel="stylesheet" href="style/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NavBar</title>
+  <link rel="stylesheet" href="style/main.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="/" >BRABO</a>
-            <div class="menu">
-                <div class="pri" ></div>
-                <div class="sec"></div>
-                <div class="ter" ></div>
+  <header>
+    <nav>
+      <a class="logo" href="/">BRABO</a>
+      <div class="menu">
+        <div class="pri"></div>
+        <div class="sec"></div>
+        <div class="ter"></div>
+      </div>
+      <ul class="list">
+        <li><a href="#"> Inicio </a> </li>
+        <li><a href="/clientes"> Clientes </a> </li>
+        <li><a href="#"> Produtos </a> </li>
+        <li><a href="#"> Contato </a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="content">
+        <div class="accordion_item">
+          <div class="accordion_header">
+            <span>
+              Clientes
+            </span>
+            <div class="icon">
+              +
             </div>
-            <ul class="list">
-                <li><a href="#"> Inicio </a> </li>
-                <li><a href="/clientes"> Clientes </a> </li>
-                <li><a href="#"> Produtos </a> </li>
-                <li><a href="#"> Contato </a> </li>
-            </ul>
-        </nav>
-    </header>
-    <main >
-        <section class="section" >
-          <div class="principal">
-            <div class="exibirProd"> Produtos cadastrados</div>
-            <div class="exibirCli">Clientes Cadastrados</div>
           </div>
-            <!-- <div class="principal" >
+
+          <div class="accordion_content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nesciunt maxime corporis expedita ipsum provident nemo accusamus! Autem quasi doloremque nobis. Sed, a aliquam iste porro sunt nobis debitis distinctio.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae accusantium ipsam voluptate harum vero animi dolore omnis numquam nobis est sit accusamus distinctio nisi laborum cumque, repellendus quam sequi mollitia.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fugiat ipsa maxime omnis, ipsam est inventore excepturi non voluptatum totam nesciunt natus eos similique officia delectus perspiciatis impedit deserunt mollitia!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio tenetur laudantium nobis ipsam labore, corporis maiores rem, doloribus at reprehenderit culpa dolores aperiam minima vero quod incidunt temporibus impedit repellat!
+            </p>
+          </div>
+        </div>
+        <div class="accordion_item">
+          <div class="accordion_header">
+            <span>
+              Produtos
+            </span>
+            <div class="icon">
+              +
+            </div>
+          </div>
+
+          <div class="accordion_content">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium amet labore voluptatum nemo aliquid quam aut corporis deserunt aliquam hic provident doloremque consectetur rem ex, velit veritatis beatae quidem iusto.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="principal" >
                 <div class="primary">
                     <div class="flip-container">
                         <div class="flipper">
@@ -68,9 +103,10 @@
                     </div>
                 </div>
             </div> -->
-        </section>
-    </main>
-    <script src="/js/NavBar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </div>
+  </main>
+  <script src="/js/NavBar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
+
 </html>

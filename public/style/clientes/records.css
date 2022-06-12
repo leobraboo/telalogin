@@ -29,6 +29,7 @@
 
 .records tr:hover{
     background-color: rgb(69, 63, 99);
+    color: #fff;
 }
 
 @media(max-width:550px){
