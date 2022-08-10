@@ -1,0 +1,68 @@
+.button{
+    border-style: outset;
+    border-radius: 4px;
+    height: 30px;
+    padding: 6px 11px ;
+    background-color: rgb(3, 3, 3);
+    color: rgb(195, 190, 197);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+
+}
+
+.button.blue{
+    background-color: rgb(24, 2, 42);
+    color: rgb(183, 178, 192);
+}
+
+button.editar{
+    background-color: rgb(26, 37, 27);
+}
+
+button.excluir{
+    background-color: rgb(56, 24, 24);
+}
+
+.button.editar:hover{
+    background-color: rgb(39, 182, 20);
+    
+}
+
+.button.excluir:hover{
+    background-color: rgb(245, 0, 0);
+    
+}
+
+.button.blue:hover{
+    background-color: rgb(91, 10, 221);
+    
+}
+
+
+.button.hover{
+    box-shadow: inset 200px 0 0 rgba(203, 235, 22, 0.733);
+}
+
+@media(max-width:550px){
+    .button.mobile{
+        color:transparent;
+        font-size:0;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        position:fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+    .button.mobile::before{
+        content: "+";
+        color:rgb(117, 235, 6);
+        font-size:2rem;
+        width:100%;
+        height:100%;
+    }
+}
+
+
+
