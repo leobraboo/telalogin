@@ -5,11 +5,12 @@
 
 body {
     margin: auto;
-    background: url(../assets/fundo.jpg) fixed;
+    background: rgb(206, 205, 205);
+    /* background: url(../assets/fundo.jpg) fixed;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .accordion {
@@ -46,8 +47,6 @@ body {
     margin-top: 3vw;
     padding: 20px;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 

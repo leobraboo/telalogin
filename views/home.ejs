@@ -12,7 +12,7 @@
 <body>
   <header>
     <nav>
-      <a class="logo" href="/">BRABO</a>
+      <a class="logo" href="/">EMPRESA</a>
       <div class="menu">
         <div class="pri"></div>
         <div class="sec"></div>
@@ -40,12 +40,16 @@
           </div>
 
           <div class="accordion_content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nesciunt maxime corporis expedita ipsum provident nemo accusamus! Autem quasi doloremque nobis. Sed, a aliquam iste porro sunt nobis debitis distinctio.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae accusantium ipsam voluptate harum vero animi dolore omnis numquam nobis est sit accusamus distinctio nisi laborum cumque, repellendus quam sequi mollitia.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fugiat ipsa maxime omnis, ipsam est inventore excepturi non voluptatum totam nesciunt natus eos similique officia delectus perspiciatis impedit deserunt mollitia!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio tenetur laudantium nobis ipsam labore, corporis maiores rem, doloribus at reprehenderit culpa dolores aperiam minima vero quod incidunt temporibus impedit repellat!
-            </p>
+            <form class="modal-form" id="form">
+              <input type="text" class="modal-field" id="nome" placeholder="NOME DO CLIENTE" required>
+              <input type="text" class="modal-field" id="cnpjCpf" placeholder="CNPJ/CPF" required>
+              <input type="text" class="modal-field" id="cidade" placeholder="CIDADE" required>
+              <input type="email" class="modal-field" id="email" placeholder="EMAIL" required>
+            </form>
+            <footer class="modal-footer">
+              <button class="button editar " id="salvar">Salvar</button>
+              <button class="button excluir" id="cancelar"> Cancelar</button>
+            </footer>
           </div>
         </div>
         <div class="accordion_item">
@@ -60,7 +64,32 @@
 
           <div class="accordion_content">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium amet labore voluptatum nemo aliquid quam aut corporis deserunt aliquam hic provident doloremque consectetur rem ex, velit veritatis beatae quidem iusto.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium amet labore voluptatum nemo aliquid
+              quam aut corporis deserunt aliquam hic provident doloremque consectetur rem ex, velit veritatis beatae
+              quidem iusto.
+          </div>
+        </div>
+        <div class="accordion_item">
+          <div class="accordion_header">
+            <span>
+              Relátorios
+            </span>
+            <div class="icon">
+              +
+            </div>
+          </div>
+
+          <div class="accordion_content">
+            <form class="modal-form" id="form">
+              <input type="text" class="modal-field" id="nome"  placeholder="NOME DO CLIENTE" required>
+              <input type="text" class="modal-field" id="cnpjCpf" placeholder="CNPJ/CPF" required>
+              <input type="text" class="modal-field" id="cidade" placeholder="CIDADE" required>
+              <input type="email" class="modal-field" id="email" placeholder="EMAIL" required>
+          </form>
+          <footer class="modal-footer">
+              <button class="button editar " id="salvar">Salvar</button>
+              <button class="button excluir" id="cancelar" > Cancelar</button>
+          </footer>
           </div>
         </div>
       </div>

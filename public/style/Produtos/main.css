@@ -12,7 +12,7 @@
 
 body{
     min-height: 100vh;
-    background: -webkit-gradient(linear, left top, left bottom, from(#070707fb), to(#0f0f0f)) no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fffffffb), to(#bababa)) no-repeat;
     background: -moz-linear-gradient(left, #b502fc, #000000);
     filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#CCCCCC', EndColorStr='#000000'); 
     display: flex;
@@ -30,6 +30,9 @@ header{
     box-shadow: 0 1px 2px rgb(123, 126, 141) ;
 
 
+}
+th{
+    color: white
 }
 tr{
     color: rgb(0, 0, 0)
